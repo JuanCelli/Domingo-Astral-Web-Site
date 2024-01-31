@@ -4,17 +4,17 @@ const ImgContainer = styled.div`
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 500px;
+    height: 100vh;
     padding: 0;
     margin: 0;
     overflow: hidden;
     `;
 
 const ImgBackground = styled.img`
-object-fit: contain;
+  object-fit: contain;
   width: 100%;
   height: 100%;
-  transform: scale(2);
+  transform: scale(1.1);
   background-size: cover;
   background-position: center;
 `;

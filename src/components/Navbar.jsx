@@ -34,6 +34,7 @@ const NavLink = styled.a`
   font-size:25px;
   padding:0px 30px;
   transition: .15s;
+  font-weight: 500;
 
   &:hover {
     color: white;

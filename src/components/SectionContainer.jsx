@@ -7,12 +7,12 @@ const Section = styled.section`
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-color: ${colors.SectionBg1};
+    background-color: ${(props) => props.color || colors.SectionBg1};
 `;
 
-export const SectionContainer = ({children }) => {
+export const SectionContainer = ({children, color }) => {
   return (
-    <Section>
+    <Section color={color}>
         {children}
     </Section>
   )

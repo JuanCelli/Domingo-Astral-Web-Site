@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 const ProfileImg = styled.img`
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 100%;
     width: 600px;
     height: 600px;
 `;
