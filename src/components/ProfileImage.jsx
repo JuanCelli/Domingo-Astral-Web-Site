@@ -9,6 +9,6 @@ const ProfileImg = styled.img`
 
 export const ProfileImage = () => {
   return (
-    <ProfileImg src="public\assets\D143B1D8-D7CA-4AB5-9F78-B89FAFD99E61.jpg"></ProfileImg>
+    <ProfileImg src="\assets\D143B1D8-D7CA-4AB5-9F78-B89FAFD99E61.jpg"></ProfileImg>
   )
 }
