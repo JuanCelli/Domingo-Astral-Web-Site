@@ -1,7 +1,7 @@
 
 import { colors } from '../styled/config'
 import './App.css'
-import { ArticuleContainer } from './components/ArticuleContainer'
+import { ArticuleContainer } from './components/ArticuleContainer.jsx'
 import { AvatarSessions } from './components/AvatarSessions'
 import { BackgroundImg } from './components/BackgroundImg'
 import { ProfileImage } from './components/ProfileImage'

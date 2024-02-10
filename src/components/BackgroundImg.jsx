@@ -4,7 +4,6 @@ const ImgContainer = styled.div`
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 100vh;
     padding: 0;
     margin: 0;
     overflow: hidden;
