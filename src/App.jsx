@@ -25,11 +25,11 @@ function App() {
           <ProfileImage></ProfileImage>
         </SectionContainer>
         <SectionContainer color={colors.SectionBg2}>
-          <AvatarSessions src="src\assets\foto sin fondo.png" title="Carta natal"></AvatarSessions>
-          <AvatarSessions src="src\assets\sin fondo 2.png" title="Carta natal con transitos"></AvatarSessions>
-          <AvatarSessions src="src\assets\ima sin fondo 2.png" title="Revolución solar"></AvatarSessions>
-          <AvatarSessions src="src\assets\IMAGEN SIN FONDO 2.png" title="Sinastría"></AvatarSessions>
-          <AvatarSessions src="src\assets\foto flor 2 sin fondo.png" title="Flores de Bach"></AvatarSessions>
+          <AvatarSessions src="\assets\foto sin fondo.png" title="Carta natal"></AvatarSessions>
+          <AvatarSessions src="\assets\sin fondo 2.png" title="Carta natal con transitos"></AvatarSessions>
+          <AvatarSessions src="\assets\ima sin fondo 2.png" title="Revolución solar"></AvatarSessions>
+          <AvatarSessions src="\assets\IMAGEN SIN FONDO 2.png" title="Sinastría"></AvatarSessions>
+          <AvatarSessions src="\assets\foto flor 2 sin fondo.png" title="Flores de Bach"></AvatarSessions>
         </SectionContainer>
 
       </MainContainer>

@@ -53,7 +53,7 @@ const Navbar = () => {
     return (
       <NavContainer>
         <LogoContainer>
-            <LogoImg src="src\assets\foto sin fondo.png"></LogoImg>
+            <LogoImg src="public\assets\foto sin fondo.png"></LogoImg>
         </LogoContainer>
 
         <NavList>

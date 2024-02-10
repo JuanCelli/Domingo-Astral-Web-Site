@@ -22,7 +22,7 @@ const ImgBackground = styled.img`
 export const BackgroundImg = () => {
   return (
     <ImgContainer>
-        <ImgBackground src="src\assets\inicio definitivo.jpeg"></ImgBackground>
+        <ImgBackground src="\assets\inicio definitivo.jpeg"></ImgBackground>
     </ImgContainer>
   )
 }
