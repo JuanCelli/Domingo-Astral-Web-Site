@@ -6,7 +6,7 @@ import { AvatarSessions } from './components/AvatarSessions'
 import { BackgroundImg } from './components/BackgroundImg'
 import { ProfileImage } from './components/ProfileImage'
 import { SectionContainer } from './components/SectionContainer'
-import Navbar from './components/navBar'
+import Navbar from './components/Navbar.jsx'
 import MainContainer from './styledComponents/MainContainer'
 
 
