@@ -2,9 +2,12 @@ import styled from "styled-components"
 
 const ProfileImg = styled.img`
     object-fit: cover;
-    border-radius: 100%;
-    width: 600px;
-    height: 600px;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 50px;
+    width: 470px;
+    height: 580px;
 `;
 
 export const ProfileImage = () => {

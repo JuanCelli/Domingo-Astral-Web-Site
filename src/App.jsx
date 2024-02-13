@@ -8,6 +8,8 @@ import { ProfileImage } from './components/ProfileImage'
 import { SectionContainer } from './components/SectionContainer'
 import Navbar from './components/Navbar.jsx'
 import MainContainer from './styledComponents/MainContainer'
+import { Buttom } from './components/Buttom.jsx'
+import { DivContainer } from './components/DivContainer.jsx'
 
 
 function App() {
@@ -24,12 +26,17 @@ function App() {
           </ArticuleContainer>
           <ProfileImage></ProfileImage>
         </SectionContainer>
-        <SectionContainer color={colors.SectionBg2}>
-          <AvatarSessions src="\assets\foto sin fondo.png" title="Carta natal"></AvatarSessions>
-          <AvatarSessions src="\assets\sin fondo 2.png" title="Carta natal con transitos"></AvatarSessions>
-          <AvatarSessions src="\assets\ima sin fondo 2.png" title="Revolución solar"></AvatarSessions>
-          <AvatarSessions src="\assets\IMAGEN SIN FONDO 2.png" title="Sinastría"></AvatarSessions>
-          <AvatarSessions src="\assets\foto flor 2 sin fondo.png" title="Flores de Bach"></AvatarSessions>
+        <SectionContainer color={colors.SectionBg2} flexDirection="column" justifyContent="center">
+          <DivContainer justifyContent="space-between">
+            <AvatarSessions src="\assets\foto sin fondo.png" title="Carta natal"></AvatarSessions>
+            <AvatarSessions src="\assets\sin fondo 2.png" title="Carta natal con transitos"></AvatarSessions>
+            <AvatarSessions src="\assets\ima sin fondo 2.png" title="Revolución solar"></AvatarSessions>
+            <AvatarSessions src="\assets\IMAGEN SIN FONDO 2.png" title="Sinastría"></AvatarSessions>
+            <AvatarSessions src="\assets\foto flor 2 sin fondo.png" title="Flores de Bach"></AvatarSessions>
+          </DivContainer>
+          <DivContainer >
+            <Buttom/>
+          </DivContainer>
         </SectionContainer>
 
       </MainContainer>
