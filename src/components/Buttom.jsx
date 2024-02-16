@@ -2,16 +2,16 @@ import styled from "styled-components"
 import { colors } from "../../styled/config"
 
 const ButtonStyled = styled.button`
-    font-size: 30px;
-    padding: 20px 40px;
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
     background-color: ${colors.buttonBg};
-    margin-top: 100px;
+    margin-top: 5rem;
     border: 1px;
     
-    border-top-left-radius: 25px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 25px;
-    border-bottom-left-radius: 10px;
+    border-top-left-radius: 1.2rem;
+    border-top-right-radius:  .5rem;
+    border-bottom-right-radius: 1.2rem;
+    border-bottom-left-radius: .5rem;
     cursor: pointer;
     transition: .2s;
     
@@ -22,8 +22,8 @@ const ButtonStyled = styled.button`
 
 `
 
-export const Buttom = () => {
+export const Buttom = ({children}) => {
   return (
-    <ButtonStyled>Buttom</ButtonStyled>
+    <ButtonStyled>{children}</ButtonStyled>
   )
 }

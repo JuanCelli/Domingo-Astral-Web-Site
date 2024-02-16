@@ -6,8 +6,8 @@ const ProfileImg = styled.img`
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 50px;
-    width: 470px;
-    height: 580px;
+    width: 22rem;
+    height: 30rem;
 `;
 
 export const ProfileImage = () => {

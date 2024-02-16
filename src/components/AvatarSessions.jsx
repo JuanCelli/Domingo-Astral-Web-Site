@@ -2,10 +2,10 @@ import styled from "styled-components"
 import { colors } from "../../styled/config"
 
 const AvatarImg = styled.img`
-    width: 200px;
-    height: 200px;
+    width: 10rem;
+    height: 10rem;
     object-fit: cover;
-    margin-bottom: 15px;
+    margin-bottom: .75;
     transition: .3s;
 
     cursor: pointer;
@@ -17,15 +17,21 @@ const AvatarImg = styled.img`
 
 const AvatarContainer = styled.div`
     display: flex;
-    width: 200px;
+    width: 12rem;
     text-align: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 3rem;
+
+    @media (max-width: 768px) {
+      width: 20rem;
+      
+  }
 `
 
 const AvatarTitle = styled.h3`
-    font-size: 26px;
+    font-size: 1.2rem;
     color: ${colors.ArticuleBg1};
 `
 

@@ -5,17 +5,28 @@ const Section = styled.section`
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 100vh;
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding: 2em;
     background-color: ${(props) => props.color || colors.SectionBg1};
+    overflow: hidden;
 `;
 
 const Container = styled.div`
     display: flex;
     flex-direction:${(props) => props.flexDirection || "row"} ;
-    justify-content:${(props) => props.justifyContent || "space-between"} ;
+    justify-content:${(props) => props.justifyContent || "space-around"} ;
     align-items: center;
-    flex-wrap: wrap;
-    width: 75%;
+    /* flex-wrap: wrap; */
+    width: 100%;
+    box-sizing: border-box;
+
+    @media (max-width: 1440px) {
+      width: 100%;
+      flex-direction:column;
+      align-content: center;
+      justify-content: center;
+  }
 `
 
 export const SectionContainer = ({children, color, flexDirection,justifyContent }) => {

@@ -10,6 +10,7 @@ import Navbar from './components/Navbar.jsx'
 import MainContainer from './styledComponents/MainContainer'
 import { Buttom } from './components/Buttom.jsx'
 import { DivContainer } from './components/DivContainer.jsx'
+import Navigation from './components/NavbarHamburguer.jsx'
 
 
 function App() {
@@ -17,9 +18,10 @@ function App() {
   return (
     <>
       <MainContainer>
-        <Navbar>
+        
+        <Navigation>
 
-        </Navbar>
+        </Navigation>
         <BackgroundImg></BackgroundImg>
         <SectionContainer>
           <ArticuleContainer title="Sobre Mí">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
@@ -35,7 +37,7 @@ function App() {
             <AvatarSessions src="\assets\foto flor 2 sin fondo.png" title="Flores de Bach"></AvatarSessions>
           </DivContainer>
           <DivContainer >
-            <Buttom/>
+            <Buttom>Ver más</Buttom>
           </DivContainer>
         </SectionContainer>
 
