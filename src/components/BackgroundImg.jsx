@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { colors } from "../../styled/config"
 
 const ImgContainer = styled.div`
     display: flex;
@@ -11,9 +12,11 @@ const ImgContainer = styled.div`
     overflow: hidden;
 
     @media (max-width: 768px) {
-      height: 50vh;
+      height: 100vh;
   }
     `;
+
+ 
 
 const ImgBackground = styled.img`
   position: absolute;
@@ -26,23 +29,24 @@ const ImgBackground = styled.img`
   background-position: center;
 
   @media (max-width: 768px) {
-    height: 50%;
+    height: 100%;
   }
 `;
 
 const Title = styled.h1`
   font-style: italic;
   font-size: 3rem;
+  font-weight: 500;
   position: relative;
-  color: white;
-  top: 50%;
+  color: ${colors.SectionBg3} ;
+  top: 40%;
   /* top:10%; */
   justify-self: center;
-  z-index: 10;
+  z-index: 5;
   margin: 2rem;
 
   @media (max-width: 768px) {
-    top:15%;
+    top:30%;
     font-size: 2rem;
   }
 `

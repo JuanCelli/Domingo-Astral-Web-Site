@@ -4,7 +4,8 @@ import { colors } from "../../styled/config"
 const ButtonStyled = styled.button`
     font-size: 1.4rem;
     padding: 1rem 2rem;
-    background-color: ${colors.buttonBg};
+    color: ${colors.SectionBg2};
+    background-color: ${colors.ArticuleBg1};
     margin-top: 5rem;
     border: 1px;
     
@@ -16,7 +17,7 @@ const ButtonStyled = styled.button`
     transition: .2s;
     
     &:hover{
-        background-color: ${colors.SectionBg1};
+        background-color: ${colors.buttonBg};
 
     }
 

@@ -2,13 +2,20 @@ import styled from "styled-components"
 
 const DivStyled = styled.div`
     display: flex;
-    width: 100%;
+    width: 80%;
     justify-content:${(props) => props.justifyContent || "center"};
     align-items: center;
+    flex-wrap: wrap;
+
+    @media (max-width: 1900px) {
+      width: 100%;
+
+  }
 
 
-    @media (max-width: 992px) {
+    @media (max-width: 600px) {
       flex-direction: column;
+      align-content: center;
 
   }
 `

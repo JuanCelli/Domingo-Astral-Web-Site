@@ -8,7 +8,7 @@ const AriculeContainerStyled = styled.article`
     width:50%;
     border-radius: 30px;
     /* border: solid 1px black; */
-    background-color: ${colors.SectionBg1};
+    /* background-color: ${colors.SectionBg1}; */
     /* padding: 1rem; */
     padding: 1rem 1rem 5rem;
 

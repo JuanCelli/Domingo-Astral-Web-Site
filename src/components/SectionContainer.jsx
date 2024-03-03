@@ -21,7 +21,7 @@ const Container = styled.div`
     width: 100%;
     box-sizing: border-box;
 
-    @media (max-width: 1440px) {
+    @media (max-width: 1260px) {
       width: 100%;
       flex-direction:column;
       align-content: center;

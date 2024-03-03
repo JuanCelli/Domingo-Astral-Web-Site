@@ -9,7 +9,7 @@ const Navbar = styled.nav`
     left: 0;
     background-color: ${colors.Navbar};
     overflow: hidden;
-    z-index: 5;
+    z-index: 10;
     padding:0rem .75rem;
     box-sizing: border-box;
     display: flex;
@@ -23,7 +23,9 @@ const Navbar = styled.nav`
 `;
 
 const LogoImg = styled.img`
-    width: 4rem
+    object-fit: cover;
+    width: 6rem;
+    height: 5rem;
 `;
 const LogoContainer = styled.div`
     display: flex;
@@ -50,7 +52,8 @@ const NavLinks = styled.div`
 `;
 
 const NavLink = styled.a`
-  color: white;
+  font-weight: 500;
+  color: ${colors.fontArticules};
   text-decoration: none;
   padding: 0.5rem 1rem;
   font-size: 1.2rem;
@@ -110,7 +113,7 @@ const Navigation = () => {
         <Burger isOpen={isOpen} />
       </MenuIcon>
       <LogoContainer>
-            <LogoImg src="\assets\foto sin fondo.png"></LogoImg>
+            <LogoImg src="\assets\Logo.png"></LogoImg>
         </LogoContainer>
       <NavLinks isOpen={isOpen}>
         <NavLink href="#">Inicio</NavLink>

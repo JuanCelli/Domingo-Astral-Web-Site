@@ -23,17 +23,19 @@ function App() {
 
         </Navigation>
         <BackgroundImg></BackgroundImg>
-        <SectionContainer>
+        <SectionContainer justifyContent="center">
           <ArticuleContainer title="Sobre Mí">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
           </ArticuleContainer>
           <ProfileImage></ProfileImage>
         </SectionContainer>
         <SectionContainer color={colors.SectionBg2} flexDirection="column" justifyContent="center">
-          <DivContainer justifyContent="space-between">
-            <AvatarSessions src="\assets\foto sin fondo.png" title="Carta natal"></AvatarSessions>
-            <AvatarSessions src="\assets\sin fondo 2.png" title="Carta natal con transitos"></AvatarSessions>
-            <AvatarSessions src="\assets\ima sin fondo 2.png" title="Revolución solar"></AvatarSessions>
+          <DivContainer justifyContent="center">
+            <AvatarSessions src="\assets\foto sin fondo.png" title="Carta Natal"></AvatarSessions>
+            <AvatarSessions src="\assets\sin fondo 2.png" title="Carta Natal con Tránsitos"></AvatarSessions>
+            <AvatarSessions src="\assets\ima sin fondo 2.png" title="Revolución Solar"></AvatarSessions>
             <AvatarSessions src="\assets\IMAGEN SIN FONDO 2.png" title="Sinastría"></AvatarSessions>
+            <AvatarSessions src="\assets\contacto 5 sin fondo 1.png" title="Talleres"></AvatarSessions>
+            <AvatarSessions src="\assets\contacto 1 sin fondo 1.png" title="Acompañamiento Astrológico"></AvatarSessions>
             <AvatarSessions src="\assets\foto flor 2 sin fondo.png" title="Flores de Bach"></AvatarSessions>
           </DivContainer>
           <DivContainer >
