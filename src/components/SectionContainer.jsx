@@ -6,7 +6,7 @@ const Section = styled.section`
     justify-content: center;
     width: 100%;
     box-sizing: border-box;
-    min-height: 100vh;
+    min-height: 90vh;
     padding: 2em;
     background-color: ${(props) => props.color || colors.SectionBg1};
     overflow: hidden;
@@ -29,9 +29,9 @@ const Container = styled.div`
   }
 `
 
-export const SectionContainer = ({children, color, flexDirection,justifyContent }) => {
+export const SectionContainer = ({children, color, flexDirection,justifyContent, id }) => {
   return (
-    <Section color={color}>
+    <Section color={color} id={id ?? undefined}>
       <Container flexDirection={flexDirection} justifyContent={justifyContent}>
         {children}
       </Container>

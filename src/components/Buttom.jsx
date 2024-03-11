@@ -2,16 +2,16 @@ import styled from "styled-components"
 import { colors } from "../../styled/config"
 
 const ButtonStyled = styled.button`
-    font-size: 1.4rem;
-    padding: 1rem 2rem;
+    font-size: 1rem;
+    padding: .7rem 1.5rem;
     color: ${colors.SectionBg2};
     background-color: ${colors.ArticuleBg1};
-    margin-top: 5rem;
+    margin-top: 3rem;
     border: 1px;
     
-    border-top-left-radius: 1.2rem;
+    border-top-left-radius: 1rem;
     border-top-right-radius:  .5rem;
-    border-bottom-right-radius: 1.2rem;
+    border-bottom-right-radius: 1rem;
     border-bottom-left-radius: .5rem;
     cursor: pointer;
     transition: .2s;

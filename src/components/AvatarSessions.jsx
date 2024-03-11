@@ -14,28 +14,35 @@ const AvatarImg = styled.img`
       transform: scale(1.05);
     }
 `
+const AvatarTitle = styled.h3`
+    font-size: 1.2rem;
+    color: ${colors.ArticuleBg1};
+`
 
 const AvatarContainer = styled.div`
     display: flex;
-    width: 12rem;
+    width: 14rem;
     text-align: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0px 3rem;
     padding: 1rem;
-    
+
     @media (max-width: 768px) {
       margin: 0px 0rem;
-      width: 20rem;
-      
+      width: 12rem;
+      ${AvatarImg}{
+        width: 8rem;
+        height: 8rem;
+      };
+      ${AvatarTitle}{
+        font-size: .9rem;
+      }
   }
 `
 
-const AvatarTitle = styled.h3`
-    font-size: 1.2rem;
-    color: ${colors.ArticuleBg1};
-`
+
 
 export const AvatarSessions = ({src,title}) => {
   return (

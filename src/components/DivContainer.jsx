@@ -8,16 +8,16 @@ const DivStyled = styled.div`
     flex-wrap: wrap;
 
     @media (max-width: 1900px) {
-      width: 100%;
+      width: 95%;
 
   }
 
 
-    @media (max-width: 600px) {
+    /* @media (max-width: 600px) {
       flex-direction: column;
       align-content: center;
 
-  }
+  } */
 `
 
 export const DivContainer = ({children,justifyContent}) => {

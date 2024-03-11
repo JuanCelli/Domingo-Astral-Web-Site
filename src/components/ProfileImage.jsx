@@ -9,7 +9,7 @@ const ProfileImg = styled.img`
     width: 18rem;
     height: 26rem;
     margin-left:6rem;
-    
+
     @media (max-width: 768px) {
       width: 15rem;
       height: 18rem;
