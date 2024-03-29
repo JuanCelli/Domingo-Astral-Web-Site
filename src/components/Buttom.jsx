@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { colors } from "../../styled/config"
+import { colors } from "../styled/config"
 
 const ButtonStyled = styled.button`
     font-size: 1rem;

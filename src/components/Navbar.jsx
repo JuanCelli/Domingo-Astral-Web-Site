@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { colors } from "../../styled/config";
+import { Link } from "react-router-dom";
 
 
 
@@ -28,7 +29,8 @@ const NavItem = styled.li`
   margin-right: 15px;
 `;
 
-const NavLink = styled.a`
+
+const NavLink = styled(Link)`
   color: black;
   text-decoration: none;
   font-size:25px;
@@ -58,10 +60,10 @@ const Navbar = () => {
 
         <NavList>
           <NavItem>
-            <NavLink href="#inicio">Inicio</NavLink>
+            <NavLink to="/">Inicio</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#acerca">Sobre Mí</NavLink>
+            <NavLink to="/sobremi">Sobre Mí</NavLink>
           </NavItem>
           <NavItem>
             <NavLink href="#servicios">Sesiones</NavLink>

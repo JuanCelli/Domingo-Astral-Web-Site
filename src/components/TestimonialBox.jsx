@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { colors } from '../../styled/config';
+import { colors } from '../styled/config';
 
 
 const timeTransition = ".3s"
@@ -49,6 +49,7 @@ const BoxContainer = styled.div`
 
     &:hover{
         background-color: ${colors.ArticuleBg1};
+        transform: scale(1.02);
     }
     &:hover ${Text}{
         color: ${colors.SectionBg2};

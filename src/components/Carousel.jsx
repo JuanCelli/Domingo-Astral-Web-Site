@@ -5,8 +5,7 @@ import styled from "styled-components";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import TestimonialBox from "./TestimonialBox";
-import { colors } from "../../styled/config";
-import { SectionContainer } from "./SectionContainer";
+import { colors } from "../styled/config";
 import TitleSection from "../styledComponents/TitleSection";
 
 const StyledSlider = styled(Slider)`
@@ -85,15 +84,6 @@ const settings = {
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     responsive: [
-        // {
-        // breakpoint: 1600,
-        // settings: {
-        //     slidesToShow: 2,
-        //     slidesToScroll: 1,
-        //     infinite: true,
-        //     dots: true,
-        // },
-        // },
         {
         breakpoint: 1400,
         settings: {

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { colors } from '../../styled/config';
+import { colors } from '../styled/config';
+import { Link } from 'react-router-dom';
 
 const Navbar = styled.nav`
     position: fixed;
@@ -116,8 +117,8 @@ const Navigation = () => {
             <LogoImg src="\assets\Logo.png"></LogoImg>
         </LogoContainer>
       <NavLinks isOpen={isOpen}>
-        <NavLink href="#">Inicio</NavLink>
-        <NavLink href="#">Sobre Mí</NavLink>
+        <NavLink href="/">Inicio</NavLink>
+        <NavLink href="/sobremi">Sobre Mí</NavLink>
         <NavLink href="#">Sesiones</NavLink>
         <NavLink href="#">Contacto</NavLink>
         <NavLink href="#">Novedades</NavLink>

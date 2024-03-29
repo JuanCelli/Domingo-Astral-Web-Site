@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { colors } from "../../styled/config"
+import { colors } from "../styled/config"
 
 const AvatarImg = styled.img`
     width: 10rem;

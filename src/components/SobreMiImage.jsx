@@ -1,3 +1,5 @@
+import React from 'react'
+
 import styled from "styled-components"
 
 const ProfileImg = styled.img`
@@ -6,8 +8,8 @@ const ProfileImg = styled.img`
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
     border-bottom-left-radius: 1.5rem;
-    width: 22rem;
-    height: 32rem;
+    width: 38rem;
+    height: 24rem;
     margin-left:6rem;
 
     @media (max-width: 768px) {
@@ -17,10 +19,10 @@ const ProfileImg = styled.img`
   }
 `;
 
-
-
-export const ProfileImage = () => {
+const SobreMiImage = () => {
   return (
-    <ProfileImg src="\assets\D143B1D8-D7CA-4AB5-9F78-B89FAFD99E61.jpg"></ProfileImg>
+    <ProfileImg src='\assets\SobreMiImage.jpg'/>
   )
 }
+
+export default SobreMiImage

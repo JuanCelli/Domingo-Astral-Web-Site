@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { colors } from "../../styled/config"
+import { colors } from "../styled/config"
 
 const ImgContainer = styled.div`
     display: flex;
@@ -56,7 +56,7 @@ export const BackgroundImg = () => {
   return (
     <ImgContainer>
         <ImgBackground src="\assets\inicio definitivo.jpeg"></ImgBackground>
-        <Title>"Como es arriba, es abajo.<br/> Como es adento, es afuera."</Title>
+        <Title>"Como es arriba, es abajo.<br/> Como es adentro, es afuera."</Title>
     </ImgContainer>
   )
 }

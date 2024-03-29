@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { colors } from '../../styled/config'
+import { colors } from '../styled/config'
 
 
 const Title = styled.h2`

@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { colors } from "../../styled/config";
+import { colors } from "../styled/config";
 
 const AriculeContainerStyled = styled.article`
     display: flex;
@@ -7,9 +7,8 @@ const AriculeContainerStyled = styled.article`
     justify-content: center;
     width:50%;
     border-radius: 30px;
-    /* border: solid 1px black; */
-    /* background-color: ${colors.SectionBg1}; */
-    /* padding: 1rem; */
+    margin-top: ${(props) => props.marginTop || "0rem"};
+    /* margin-top: 6rem; */
     padding: 1rem 1rem 5rem;
 
     @media (max-width: 768px) {
@@ -26,18 +25,16 @@ const TitleArticule = styled.h2`
 
 const TextArticule = styled.p`
   color: ${colors.fontArticules};
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin: 0;
+  margin: 0 0 1.5rem 0;
 `
 
-export const ArticuleContainer = ({title,children }) => {
+export const ArticuleContainer = ({title,children, marginTop}) => {
   return (
-    <AriculeContainerStyled>
-      <TitleArticule>{title}</TitleArticule>
-      <TextArticule>
-        {children}
-      </TextArticule>
-      
+    <AriculeContainerStyled marginTop={marginTop}>
+      {title?<TitleArticule>{title}</TitleArticule>:<></>}
+      {children.map(text=><TextArticule key={text}>{text}</TextArticule>)}
     </AriculeContainerStyled>
   )
 }

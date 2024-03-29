@@ -1,0 +1,46 @@
+.slider-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slick-list{
+    min-height: 40rem;
+    width: 70rem;
+}
+
+
+
+#section{
+    background-color: black;
+}
+
+.slick-slide > div {
+    margin: 0 10px;
+  }
+.slick-list {
+    margin: 0 -10px;
+  }
+
+
+@media (max-width: 2000px) {
+.slick-list{
+    width: 70rem;
+}
+}
+@media (max-width: 1100px) {
+.slick-list{
+    width: 50rem;
+}
+}
+@media (max-width: 720px) {
+.slick-list{
+    width: 28rem;
+}
+}
+@media (max-width: 500px) {
+.slick-list{
+    width: 23rem;
+}
+}
+
