@@ -19,13 +19,13 @@ const AriculeContainerStyled = styled.article`
 
 const TitleArticule = styled.h2`
   color: ${colors.ArticuleBg1};
-  font-size: 2.2rem;
+  font-size: 2.1rem;
   margin-bottom:20px;
 `
 
 const TextArticule = styled.p`
   color: ${colors.fontArticules};
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   margin: 0;
   margin: 0 0 1.5rem 0;
 `

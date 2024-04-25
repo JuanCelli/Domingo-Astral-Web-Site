@@ -26,7 +26,7 @@ const AvatarContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0px 3rem;
+    margin: 0px 2rem;
     padding: 1rem;
 
     @media (max-width: 768px) {

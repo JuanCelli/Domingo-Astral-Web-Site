@@ -8,8 +8,8 @@ const ProfileImg = styled.img`
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
     border-bottom-left-radius: 1.5rem;
-    width: 38rem;
-    height: 24rem;
+    width: 32rem;
+    height: 22rem;
     margin-left:6rem;
 
     @media (max-width: 768px) {

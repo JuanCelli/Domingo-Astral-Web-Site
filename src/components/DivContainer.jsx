@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 const DivStyled = styled.div`
     display: flex;
-    width: 80%;
+    width: 100%;
     justify-content:${(props) => props.justifyContent || "center"};
     align-items: center;
     flex-wrap: wrap;

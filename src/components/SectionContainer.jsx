@@ -7,7 +7,7 @@ const Section = styled.section`
     /* align-items: start; */
     width: 100%;
     box-sizing: border-box;
-    min-height: 100vh;
+    min-height: calc(100vh - 90px);
     padding: 2em;
     background-color: ${(props) => props.color || colors.SectionBg1};
     overflow: hidden;

@@ -1,5 +1,6 @@
 export const colors = {
-    Navbar: "rgba(217, 217, 217, 0.28)",
+    NavbarTrasparent: "rgba(217, 217, 217, 0.0)",
+    Navbar: "#B0B9D1",
     SectionBg1: "#F9F7EF",
     ArticuleBg1: "#598CA7",
     SectionBg2: "#EDEDED",

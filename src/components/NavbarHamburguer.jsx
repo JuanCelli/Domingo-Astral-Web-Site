@@ -5,10 +5,11 @@ import { Link } from 'react-router-dom';
 
 const Navbar = styled.nav`
     position: fixed;
+    height:${({ color }) =>  color ? "90px" : "130px"};
     width: 100%;
     top: 0;
     left: 0;
-    background-color: ${colors.Navbar};
+    background-color: ${({ color }) => color ? colors.Navbar : colors.NavbarTrasparent};
     overflow: hidden;
     z-index: 10;
     padding:0rem .75rem;
@@ -16,6 +17,7 @@ const Navbar = styled.nav`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: 0.4s ease-out;
 
     @media (max-width: 768px) {
       justify-content:center;
@@ -101,13 +103,24 @@ const Burger = styled.div`
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [color, setColor] = useState(false)
+
+  const changeColor = () =>{
+    if (window.scrollY>=130){
+      setColor(true)
+    }else{
+      setColor(false)
+    }
+  }
+
+  window.addEventListener("scroll", changeColor)
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   return (
-    <Navbar>
+    <Navbar color={color}>
       <MenuIcon onClick={toggleMenu}>
         <Burger isOpen={isOpen} />
         <Burger isOpen={isOpen} />
