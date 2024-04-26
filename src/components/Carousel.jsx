@@ -41,13 +41,25 @@ const testimonialData = [
         text:"Gracias inmensas por tu escucha y toda la info que nos ayuda a conocernos en mayor profundidad. ¡super recomiendo!"
     },
     {
-        author:"Lupe",
-        text:"Zoe es una gran profesional. Su cercanía al leerte la carta es la que hace sentirte comodx rapidamente en las sesiones. Su enfoque en acompañar procesos internos es una gran herramienta para les consultantes. El conocimiento sale de Zoe siempre con mucho respeto, cuidado y emoción. Es una gran experiencia de autoconocimiento. La recomiendo!"
+        author:"Sara",
+        text:"Muchas gracias por todo la verdad que posta das un espacio que invita a abrirse y sentirse comodx, no sé bien qué esperaba pero quedé super contenta"
     },
     {
-        author:"Ana",
-        text:"Gracias inmensas por tu escucha y toda la info que nos ayuda a conocernos en mayor profundidad. ¡super recomiendo!"
-    }
+        author:"Tatiana",
+        text:"Gracias! Siento felicidad despues de nuestro encuentro! Poder abrirme y que puedas entenderme de una forma re mágica en procesos de vida!! Gracias por todas tus palabras! gracias por acompañaar este momento"
+    },
+    {
+        author:"Abril",
+        text:"Zo, miles de gracias por la hermosa sesión! Realmente me ayudó a esclarecer todo lo que me venía planteando y hoy siento que me conozco un poquito más. Obvio que me llevo muchas dudas, así como también herramientas para resolverlas de a poquito, sos lo MÁS!! volveré segurísimo, 100%"
+    },
+    {
+        author:"Mara",
+        text:"Gracias!!! hoy entendí eso que siempre te dicen. Tu carta natal es el libro de tu vida!! es tan real como eso!!! lo entendes todo. Gracias bella me encanto"
+    },
+    {
+        author:"Lupe",
+        text:"En un momento de mi vida donde hay tanto sucediendo, tenía la necesidad de saber que me estaban queriendo acercar los astros. Esta es la Revolución Solar que mas claridad me trajo, me ayudo a encontrar un norte hacia el cuál ir. "
+    },
 ]
 
 function SampleNextArrow(props) {

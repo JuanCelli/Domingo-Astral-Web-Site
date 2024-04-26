@@ -8,12 +8,12 @@ const AriculeContainerStyled = styled.article`
     width:50%;
     border-radius: 30px;
     margin-top: ${(props) => props.marginTop || "0rem"};
-    /* margin-top: 6rem; */
     padding: 1rem 1rem 5rem;
 
     @media (max-width: 768px) {
       width: 100%;
-      padding: 0rem 0rem 5rem;
+      padding: 0rem 0rem 3rem;
+      margin-top: 0rem;
   }
 `;
 

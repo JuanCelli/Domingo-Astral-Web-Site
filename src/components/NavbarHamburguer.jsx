@@ -20,8 +20,10 @@ const Navbar = styled.nav`
     transition: 0.4s ease-out;
 
     @media (max-width: 768px) {
+      background-color: ${colors.Navbar};
       justify-content:center;
       width: 100%;
+      height: ${({ isOpen }) => (isOpen ? '100vh' : 'auto')};
   }
 `;
 
@@ -42,6 +44,7 @@ const LogoContainer = styled.div`
 `;
 
 const NavLinks = styled.div`
+  padding: 8rem 2rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -49,8 +52,10 @@ const NavLinks = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
-    height: ${({ isOpen }) => (isOpen ? 'auto' : '0')};
+    display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
+    height: ${({ isOpen }) => (isOpen ? '100vh' : '0')};
     overflow: hidden;
+    z-index: 15;
   }
 `;
 
@@ -60,10 +65,20 @@ const NavLink = styled.a`
   text-decoration: none;
   padding: 0.5rem 1rem;
   font-size: 1.2rem;
+  transition: .1s ease-in-out;
 
   &:hover {
-    color: lightgray;
+    /* color: lightgray; */
+    color: ${({ color }) => color ? colors.SectionBg1 : "lightgray"};
   }
+
+  @media (max-width: 768px) {
+    &:hover {
+    color: ${colors.SectionBg1};
+  }
+  }
+
+
 `;
 
 const MenuIcon = styled.div`
@@ -130,11 +145,11 @@ const Navigation = () => {
             <LogoImg src="\assets\Logo.png"></LogoImg>
         </LogoContainer>
       <NavLinks isOpen={isOpen}>
-        <NavLink href="/">Inicio</NavLink>
-        <NavLink href="/sobremi">Sobre Mí</NavLink>
-        <NavLink href="#">Sesiones</NavLink>
-        <NavLink href="#">Contacto</NavLink>
-        <NavLink href="#">Novedades</NavLink>
+        <NavLink color={color} href="/">Inicio</NavLink>
+        <NavLink color={color} href="/sobremi">Sobre Mí</NavLink>
+        <NavLink color={color} href="#">Sesiones</NavLink>
+        <NavLink color={color} href="#">Contacto</NavLink>
+        <NavLink color={color} href="#">Novedades</NavLink>
       </NavLinks>
     </Navbar>
   );

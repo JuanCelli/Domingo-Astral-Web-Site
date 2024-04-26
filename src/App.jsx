@@ -3,8 +3,9 @@ import ArrowUp from './components/ArrowUp.jsx'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 
-import Home from './pages/home.jsx'
+import Home from './pages/Home.jsx'
 import SobreMi from './pages/SobreMi.jsx'
+import Footer from './components/Footer.jsx'
 
 
 
@@ -20,6 +21,7 @@ function App() {
           <Route path='/sobremi' element={<SobreMi/>}/>
         </Routes>
       </BrowserRouter>
+      <Footer></Footer>
       <ArrowUp></ArrowUp>
 
     </>

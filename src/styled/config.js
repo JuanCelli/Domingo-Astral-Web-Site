@@ -6,5 +6,6 @@ export const colors = {
     SectionBg2: "#EDEDED",
     buttonBg:"#788CA8",
     fontArticules: "#4b4b4b",
-    SectionBg3:"#F9F7EF"
+    SectionBg3:"#F9F7EF",
+    LinkUnHover: "#BCBCBC"
 }

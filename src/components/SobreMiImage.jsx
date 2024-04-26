@@ -13,8 +13,8 @@ const ProfileImg = styled.img`
     margin-left:6rem;
 
     @media (max-width: 768px) {
-      width: 15rem;
-      height: 18rem;
+      width: 20rem;
+      height: 16rem;
       margin-left:0;
   }
 `;

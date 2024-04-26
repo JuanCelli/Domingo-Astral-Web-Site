@@ -32,9 +32,9 @@ const SobreMi = () => {
           </ArticuleContainer>
           <SobreMiImage></SobreMiImage>
         </SectionContainer>
-        <SectionContainer width={"70%"} justifyContent="center" alignItems="start" >
+        <SectionContainer width={"70%"} justifyContent="center" ReverseWarp={true}>
           <SobreMiImage2></SobreMiImage2>
-          <ArticuleContainer marginTop="4rem">
+          <ArticuleContainer marginTop="-8rem">
             {texts2}
           </ArticuleContainer>
 

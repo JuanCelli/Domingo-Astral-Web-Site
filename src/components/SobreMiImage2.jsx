@@ -15,8 +15,8 @@ const ProfileImg3 = styled.img`
     margin-left:6rem;
 
     @media (max-width: 768px) {
-      width: 15rem;
-      height: 18rem;
+      width: 18rem;
+      height: 14rem;
       margin-left:0;
   }
 `;
@@ -34,15 +34,20 @@ const ProfileImg2 = styled.img`
     margin-left:6rem;
 
     @media (max-width: 768px) {
-      width: 15rem;
+      width: 14rem;
       height: 18rem;
-      margin-left:0;
+      margin-left:4rem;
   }
 `;
 
 const ContainerImages = styled.div`
   justify-content: center;
   width: 70%;
+
+  @media (max-width: 768px) {
+    height: 24rem;
+  }
+
 `
 
 const SobreMiImage2 = () => {

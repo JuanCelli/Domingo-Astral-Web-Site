@@ -1,6 +1,8 @@
 import styled from "styled-components"
 import { colors } from "../styled/config";
 
+
+
 const Section = styled.section`
     display: flex;
     justify-content: center;
@@ -11,6 +13,7 @@ const Section = styled.section`
     padding: 2em;
     background-color: ${(props) => props.color || colors.SectionBg1};
     overflow: hidden;
+
 `;
 
 const Container = styled.div`
@@ -33,12 +36,16 @@ const Container = styled.div`
       align-content: center;
       justify-content: center;
   }
+
+  @media (max-width: 768px) {
+    flex-direction: ${(props) => props.ReverseWarp ? "column-reverse" : "column"} ;
+    }
 `
 
-export const SectionContainer = ({children, color, flexDirection,justifyContent, id,width, alignItems }) => {
+export const SectionContainer = ({children, color, flexDirection,justifyContent, id,width, alignItems,ReverseWarp }) => {
   return (
     <Section color={color} id={id ?? undefined}>
-      <Container flexDirection={flexDirection} justifyContent={justifyContent} width={width} alignItems={alignItems}>
+      <Container flexDirection={flexDirection} justifyContent={justifyContent} width={width} alignItems={alignItems} ReverseWarp={ReverseWarp}>
         {children}
       </Container>
     </Section>
