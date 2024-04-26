@@ -1,17 +1,18 @@
 import styled from "styled-components"
 import { colors } from "../styled/config"
+import { Link } from "react-router-dom"
 
 const AvatarImg = styled.img`
-    width: 10rem;
-    height: 10rem;
+    width:${({ size }) => (size ==="small" ? '8rem' : '10rem')};
+    height: ${({ size }) => (size ==="small" ? '8rem' : '10rem')};
     object-fit: cover;
     margin-bottom: .75;
-    transition: .3s;
+    transition: .2s;
 
     cursor: pointer;
 
     &:hover{
-      transform: scale(1.05);
+      transform: scale(1.07);
     }
 `
 const AvatarTitle = styled.h3`
@@ -19,9 +20,10 @@ const AvatarTitle = styled.h3`
     color: ${colors.ArticuleBg1};
 `
 
+
 const AvatarContainer = styled.div`
     display: flex;
-    width: 14rem;
+    width:${({ size }) => (size ==="small" ? '8rem' : '14rem')};
     text-align: center;
     flex-direction: column;
     justify-content: center;
@@ -33,8 +35,8 @@ const AvatarContainer = styled.div`
       margin: 0px 0rem;
       width: 12rem;
       ${AvatarImg}{
-        width: 8rem;
-        height: 8rem;
+        width: ${({ size }) => (size ==="small" ? '6rem' : '8rem')};
+        height: ${({ size }) => (size ==="small" ? '6rem' : '8rem')};
       };
       ${AvatarTitle}{
         font-size: .9rem;
@@ -42,13 +44,19 @@ const AvatarContainer = styled.div`
   }
 `
 
+const AvatarLink = styled(Link)`
+  text-decoration: none;
+`
 
 
-export const AvatarSessions = ({src,title}) => {
+
+export const AvatarSessions = ({src,title,size,url}) => {
   return (
-    <AvatarContainer>
-        <AvatarImg src={src}></AvatarImg>
+    <AvatarContainer size={size}>
+      <AvatarLink to={url}>
+        <AvatarImg src={src} size={size}></AvatarImg>
         <AvatarTitle>{title}</AvatarTitle>
+      </AvatarLink>
     </AvatarContainer>
   )
 }

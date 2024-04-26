@@ -147,7 +147,7 @@ const Navigation = () => {
       <NavLinks isOpen={isOpen}>
         <NavLink color={color} href="/">Inicio</NavLink>
         <NavLink color={color} href="/sobremi">Sobre Mí</NavLink>
-        <NavLink color={color} href="#">Sesiones</NavLink>
+        <NavLink color={color} href="/sesiones">Sesiones</NavLink>
         <NavLink color={color} href="#">Contacto</NavLink>
         <NavLink color={color} href="#">Novedades</NavLink>
       </NavLinks>

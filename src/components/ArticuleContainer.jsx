@@ -21,6 +21,9 @@ const TitleArticule = styled.h2`
   color: ${colors.ArticuleBg1};
   font-size: 2.1rem;
   margin-bottom:20px;
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 `
 
 const TextArticule = styled.p`
@@ -28,6 +31,9 @@ const TextArticule = styled.p`
   font-size: 1.3rem;
   margin: 0;
   margin: 0 0 1.5rem 0;
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 `
 
 export const ArticuleContainer = ({title,children, marginTop}) => {

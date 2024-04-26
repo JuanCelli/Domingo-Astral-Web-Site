@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home.jsx'
 import SobreMi from './pages/SobreMi.jsx'
 import Footer from './components/Footer.jsx'
+import Sesiones from './pages/Sesiones.jsx'
 
 
 
@@ -19,6 +20,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/sobremi' element={<SobreMi/>}/>
+          <Route path='/sesiones' element={<Sesiones/>}/>
         </Routes>
       </BrowserRouter>
       <Footer></Footer>
