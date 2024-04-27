@@ -1,7 +1,13 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { colors } from '../styled/config';
-import { Link } from 'react-router-dom';
+
+
+import InstagramIcon from '@mui/icons-material/Instagram';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
+
+import Item from './ItemLinkContact';
 
 const Navbar = styled.nav`
     position: fixed;
@@ -20,6 +26,7 @@ const Navbar = styled.nav`
     transition: 0.4s ease-out;
 
     @media (max-width: 768px) {
+      flex-direction: column ;
       background-color: ${colors.Navbar};
       justify-content:center;
       width: 100%;
@@ -37,9 +44,10 @@ const LogoContainer = styled.div`
     padding: 0rem 2rem;
 
     @media (max-width: 768px) {
-      display: none;
-      height: ${({ isOpen }) => (isOpen ? 'auto' : '0')};
-      overflow: hidden;
+      ${({ isOpen }) => (isOpen ? 'position:relative' : 'display:none')};
+      position: ${({ isOpen }) => (isOpen ? 'absolute' : 'none')};
+      top: 5px;
+      left: -25px;
   }
 `;
 
@@ -53,9 +61,10 @@ const NavLinks = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
     display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
+    padding-top: 5rem;
     height: ${({ isOpen }) => (isOpen ? '100vh' : '0')};
     overflow: hidden;
-    z-index: 15;
+    /* z-index: 15; */
   }
 `;
 
@@ -80,6 +89,17 @@ const NavLink = styled.a`
 
 
 `;
+
+const ContactNavbar = styled.div`
+  display: ${({ isOpen }) => isOpen ? "flex" : "none"};
+  
+  @media (max-width: 768px) {
+    width: 12rem;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 2rem;
+  }
+`
 
 const MenuIcon = styled.div`
   display: none;
@@ -141,7 +161,7 @@ const Navigation = () => {
         <Burger isOpen={isOpen} />
         <Burger isOpen={isOpen} />
       </MenuIcon>
-      <LogoContainer>
+      <LogoContainer isOpen={isOpen}>
             <LogoImg src="\assets\Logo.png"></LogoImg>
         </LogoContainer>
       <NavLinks isOpen={isOpen}>
@@ -151,6 +171,12 @@ const Navigation = () => {
         <NavLink color={color} href="#">Contacto</NavLink>
         <NavLink color={color} href="#">Novedades</NavLink>
       </NavLinks>
+
+      <ContactNavbar isOpen={isOpen}>
+        <Item color={colors.fontArticules} icon={<InstagramIcon fontSize="medium" />} url="https://www.instagram.com/domingo.astral/" />
+        <Item color={colors.fontArticules} icon={<WhatsAppIcon fontSize="medium" />} url="https://wa.me/5401167911122" />
+        <Item color={colors.fontArticules} icon={<MailOutlineIcon fontSize="medium" />} url="mailto:domingoastrall@gmail.com" />
+      </ContactNavbar>
     </Navbar>
   );
 };

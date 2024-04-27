@@ -4,6 +4,7 @@ import { colors } from "../styled/config"
 import InstagramIcon from '@mui/icons-material/Instagram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import Item from "./ItemLinkContact.jsx";
 
 
 
@@ -31,58 +32,13 @@ const ContainerItems = styled.div`
   justify-content: center;
   `
 
-const ItemContainer = styled.div`
-  padding: .5rem 0rem;
 
-  &:hover{
-    color: ${colors.SectionBg1};
-  }
-`
-
-const LinkItem = styled.a`
-  text-decoration:none;
-  color: ${colors.LinkUnHover};
-  transition: .1s ease-in-out;
-
-
-  &:hover{
-    color: ${colors.SectionBg1};
-  }
-`
-
-const ContentLink = styled.div`
-  display: flex;
-  justify-content: baseline;
-  gap:.5rem ;
-`
-
-const SpanItem = styled.span`
-  color: ${colors.LinkUnHover}
-`
 
 const TitleSection = styled.h2`
   color: ${colors.SectionBg1};
   font-weight: 400;
   font-size: 1.5rem;
 `
-
-
-const Item = ({icon, text,url}) =>{
-  return (
-    <ItemContainer>
-
-      {url ?
-        <LinkItem href={url}>
-          <ContentLink>
-            {icon} {text}
-          </ContentLink>
-        </LinkItem>
-      :
-        <SpanItem>{icon} {text}</SpanItem>}
-    </ItemContainer>
-  )
-}
-
 
 
 
@@ -104,7 +60,7 @@ const Footer = () => {
       <SectionFooter>
         <TitleSection>Diseño Web</TitleSection>
         <ContainerItems>
-          <Item url="https://www.instagram.com/lupeilustra/" text="Arte por @lupeilustra"/>
+          <Item url="https://www.instagram.com/lupeilustra/" text="Arte por Lupe Colino | @lupeilustra"/>
           <Item url="mailto:celli.juan.ignacio@gmail.com" text="Desarrollo Web por Juan Celli"/>
         </ContainerItems>
       </SectionFooter>

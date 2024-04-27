@@ -56,13 +56,17 @@ const SectionAvatars = styled.section`
 `
 
 const ContainerAvatars = styled.div`
-    padding-top: 10rem;
-    flex-wrap: wrap;
+    margin-top: 10rem;
+    flex-wrap: nowrap;
     width: 90%;
     background-color: ${colors.SectionBg2} ;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media(max-width: 1000px){
+        flex-wrap: wrap;
+    }
 
 
 `
@@ -72,13 +76,13 @@ const Sesiones = () => {
     <MainContainer >
         <SectionAvatars>
             <ContainerAvatars>
-                <AvatarSessions url="/sesiones#CartaNatal" size="small" src="\assets\foto sin fondo.png" title="Carta Natal"></AvatarSessions>
-                <AvatarSessions url="/sesiones#CartaNatalConTransitos" size="small" src="\assets\sin fondo 2.png" title="Carta Natal con Tránsitos"></AvatarSessions>
-                <AvatarSessions url="/sesiones#RevolucionSolar" size="small" src="\assets\ima sin fondo 2.png" title="Revolución Solar"></AvatarSessions>
-                <AvatarSessions url="/sesiones#SinastriaYCartaCompuesta" size="small" src="\assets\IMAGEN SIN FONDO 2.png" title="Sinastría"></AvatarSessions>
-                <AvatarSessions url="/sesiones#AcompanamientoAstrologico" size="small" src="\assets\contacto 1 sin fondo 1.png" title="Acompañamiento Astrológico"></AvatarSessions>
-                <AvatarSessions url="/sesiones#Talleres" size="small" src="\assets\contacto 5 sin fondo 1.png" title="Talleres"></AvatarSessions>
-                <AvatarSessions url="/sesiones#FloresDeBach" size="small" src="\assets\foto flor 2 sin fondo.png" title="Flores de Bach"></AvatarSessions>
+                <AvatarSessions url="/sesiones/#CartaNatal" size="small" src="\assets\foto sin fondo.png" title="Carta Natal"></AvatarSessions>
+                <AvatarSessions url="/sesiones/#CartaNatalConTransitos" size="small" src="\assets\sin fondo 2.png" title="Carta Natal con Tránsitos"></AvatarSessions>
+                <AvatarSessions url="/sesiones/#RevolucionSolar" size="small" src="\assets\ima sin fondo 2.png" title="Revolución Solar"></AvatarSessions>
+                <AvatarSessions url="/sesiones/#SinastriaYCartaCompuesta" size="small" src="\assets\IMAGEN SIN FONDO 2.png" title="Sinastría"></AvatarSessions>
+                <AvatarSessions url="/sesiones/#AcompanamientoAstrologico" size="small" src="\assets\contacto 1 sin fondo 1.png" title="Acompañamiento Astrológico"></AvatarSessions>
+                <AvatarSessions url="/sesiones/#Talleres" size="small" src="\assets\contacto 5 sin fondo 1.png" title="Talleres"></AvatarSessions>
+                <AvatarSessions url="/sesiones/#FloresDeBach" size="small" src="\assets\foto flor 2 sin fondo.png" title="Flores de Bach"></AvatarSessions>
 
             </ContainerAvatars>
         </SectionAvatars>

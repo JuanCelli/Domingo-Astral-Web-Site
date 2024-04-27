@@ -35,16 +35,16 @@ const Home = () => {
     <SectionContainer width="80%" color={colors.SectionBg2} flexDirection="column" justifyContent="center">
       <TitleSection>Sesiones</TitleSection>
       <DivContainer justifyContent="center">
-        <AvatarSessions url="/sesiones#CartaNatal" src="\assets\foto sin fondo.png" title="Carta Natal"></AvatarSessions>
-        <AvatarSessions url="/sesiones#CartaNatalConTransitos" src="\assets\sin fondo 2.png" title="Carta Natal con Tránsitos"></AvatarSessions>
-        <AvatarSessions url="/sesiones#RevolucionSolar" src="\assets\ima sin fondo 2.png" title="Revolución Solar"></AvatarSessions>
-        <AvatarSessions url="/sesiones#SinastriaYCartaCompuesta" src="\assets\IMAGEN SIN FONDO 2.png" title="Sinastría"></AvatarSessions>
-        <AvatarSessions url="/sesiones#Talleres" src="\assets\contacto 5 sin fondo 1.png" title="Talleres"></AvatarSessions>
-        <AvatarSessions url="/sesiones#AcompanamientoAstrologico" src="\assets\contacto 1 sin fondo 1.png" title="Acompañamiento Astrológico"></AvatarSessions>
-        <AvatarSessions url="/sesiones#FloresDeBach" src="\assets\foto flor 2 sin fondo.png" title="Flores de Bach"></AvatarSessions>
+        <AvatarSessions url="/sesiones/#CartaNatal" src="\assets\foto sin fondo.png" title="Carta Natal"></AvatarSessions>
+        <AvatarSessions url="/sesiones/#CartaNatalConTransitos" src="\assets\sin fondo 2.png" title="Carta Natal con Tránsitos"></AvatarSessions>
+        <AvatarSessions url="/sesiones/#RevolucionSolar" src="\assets\ima sin fondo 2.png" title="Revolución Solar"></AvatarSessions>
+        <AvatarSessions url="/sesiones/#SinastriaYCartaCompuesta" src="\assets\IMAGEN SIN FONDO 2.png" title="Sinastría"></AvatarSessions>
+        <AvatarSessions url="/sesiones/#Talleres" src="\assets\contacto 5 sin fondo 1.png" title="Talleres"></AvatarSessions>
+        <AvatarSessions url="/sesiones/#AcompanamientoAstrologico" src="\assets\contacto 1 sin fondo 1.png" title="Acompañamiento Astrológico"></AvatarSessions>
+        <AvatarSessions url="/sesiones/#FloresDeBach" src="\assets\foto flor 2 sin fondo.png" title="Flores de Bach"></AvatarSessions>
       </DivContainer>
       <DivContainer >
-        <Buttom>Ver más</Buttom>
+        <Buttom src="/sesiones" >Ver más</Buttom>
       </DivContainer>
     </SectionContainer>
       <Carousel></Carousel>

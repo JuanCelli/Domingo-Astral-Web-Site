@@ -1,6 +1,9 @@
 import styled from "styled-components"
 import { colors } from "../styled/config"
 import { Link } from "react-router-dom"
+import { HashLink } from "react-router-hash-link"
+
+
 
 const AvatarImg = styled.img`
     width:${({ size }) => (size ==="small" ? '8rem' : '10rem')};
@@ -31,6 +34,10 @@ const AvatarContainer = styled.div`
     margin: 0px 2rem;
     padding: 1rem;
 
+    @media (max-width: 1400px) {
+      width:${({ size }) => (size ==="small" ? '8rem' : '13rem')};
+    }
+
     @media (max-width: 768px) {
       margin: 0px 0rem;
       width: 12rem;
@@ -44,7 +51,7 @@ const AvatarContainer = styled.div`
   }
 `
 
-const AvatarLink = styled(Link)`
+const AvatarLink = styled(HashLink)`
   text-decoration: none;
 `
 

@@ -1,13 +1,16 @@
 import styled from "styled-components"
 import { colors } from "../styled/config"
+import { HashLink } from "react-router-hash-link"
+import { Link } from "react-router-dom"
 
-const ButtonStyled = styled.button`
+const ButtonStyled = styled(Link)`
     font-size: 1rem;
     padding: .7rem 1.5rem;
     color: ${colors.SectionBg2};
     background-color: ${colors.ArticuleBg1};
     margin-top: 3rem;
     border: 1px;
+    text-decoration: none;
     
     border-top-left-radius: 1rem;
     border-top-right-radius:  .5rem;
@@ -23,8 +26,8 @@ const ButtonStyled = styled.button`
 
 `
 
-export const Buttom = ({children}) => {
+export const Buttom = ({children,src}) => {
   return (
-    <ButtonStyled>{children}</ButtonStyled>
+    <ButtonStyled to={src} reloadDocument>{children}</ButtonStyled>
   )
 }
