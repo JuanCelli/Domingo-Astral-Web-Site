@@ -7,5 +7,8 @@ export const colors = {
     buttonBg:"#788CA8",
     fontArticules: "#4b4b4b",
     SectionBg3:"#F9F7EF",
-    LinkUnHover: "#BCBCBC"
+    LinkUnHover: "#BCBCBC",
+    ContactoBg: "#D9D9D9",
+    InputContactBg: "#72879C",
+    NavLink: "#636363",
 }

@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { colors } from '../styled/config';
+
 
 
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -8,6 +9,10 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 
 import Item from './ItemLinkContact';
+import { NavLink, useLocation } from 'react-router-dom';
+
+
+
 
 const Navbar = styled.nav`
     position: fixed;
@@ -68,9 +73,9 @@ const NavLinks = styled.div`
   }
 `;
 
-const NavLink = styled.a`
+const NavLinkStyled = styled(NavLink)`
   font-weight: 500;
-  color: ${colors.fontArticules};
+  color: ${colors.NavLink};
   text-decoration: none;
   padding: 0.5rem 1rem;
   font-size: 1.2rem;
@@ -78,7 +83,8 @@ const NavLink = styled.a`
 
   &:hover {
     /* color: lightgray; */
-    color: ${({ color }) => color ? colors.SectionBg1 : "lightgray"};
+    color: ${({ isHome }) => isHome ? colors.SectionBg1 : colors.ArticuleBg1};
+    color: ${({ color }) => color ? colors.SectionBg1 : ""};
   }
 
   @media (max-width: 768px) {
@@ -138,7 +144,10 @@ const Burger = styled.div`
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [color, setColor] = useState(false)
+  const [color, setColor] = useState(false);
+  const [isHome, setIsHome] = useState(false)
+  const location = useLocation()
+
 
   const changeColor = () =>{
     if (window.scrollY>=130){
@@ -148,10 +157,22 @@ const Navigation = () => {
     }
   }
 
+  useEffect(()=>{
+    if(location.pathname==="/"){
+      setIsHome(true)
+    }else{
+      setIsHome(false)
+    }
+  },[location])
+
   window.addEventListener("scroll", changeColor)
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const setCloseMenu = () => {
+    setIsOpen(false);
   };
 
   return (
@@ -165,12 +186,14 @@ const Navigation = () => {
             <LogoImg src="\assets\Logo.png"></LogoImg>
         </LogoContainer>
       <NavLinks isOpen={isOpen}>
-        <NavLink color={color} href="/">Inicio</NavLink>
-        <NavLink color={color} href="/sobremi">Sobre Mí</NavLink>
-        <NavLink color={color} href="/sesiones">Sesiones</NavLink>
-        <NavLink color={color} href="#">Contacto</NavLink>
-        <NavLink color={color} href="#">Novedades</NavLink>
+        <NavLinkStyled color={color} isHome={isHome} onClick={setCloseMenu} to="/">Inicio</NavLinkStyled>
+        <NavLinkStyled color={color} isHome={isHome} onClick={setCloseMenu} to="/sobremi">Sobre Mí</NavLinkStyled>
+        <NavLinkStyled color={color} isHome={isHome} onClick={setCloseMenu} to="/sesiones">Sesiones</NavLinkStyled>
+        <NavLinkStyled color={color} isHome={isHome} onClick={setCloseMenu} to="/contacto">Contacto</NavLinkStyled>
+        <NavLinkStyled color={color} isHome={isHome} onClick={setCloseMenu} to="/">Novedades</NavLinkStyled>
       </NavLinks>
+
+
 
       <ContactNavbar isOpen={isOpen}>
         <Item color={colors.fontArticules} icon={<InstagramIcon fontSize="medium" />} url="https://www.instagram.com/domingo.astral/" />

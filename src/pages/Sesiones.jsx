@@ -4,6 +4,7 @@ import { SectionContainer } from "../components/SectionContainer"
 import { ArticuleContainer } from "../components/ArticuleContainer"
 import { colors } from "../styled/config"
 import { AvatarSessions } from "../components/AvatarSessions"
+import ScrollToTop from "../utils/ScrollToTop"
 
 const textsCartaNatal = ["Es como si le sacaramos una foto al cielo en el momento exacto que naciste. Esto nos brinda un mapa energético, el cual es único para cada persona y nos acompaña toda la vida. ",
                 "La carta natal nos ayuda a conocernos en profundidad, descubrir qué tipo de energía tenemos más, o se nos da natural, y cuáles tenemos que seguir aprendiendo. Nos brinda herramientas para entedernos y ser mas amorosos con nosotros mismos y las cosas que nos suceden. Todo lo que nos pasa nos corresponde, lo que nos ocurre afuera tambien esta ocurriendonos adentro.  Como es adentro, es afuera.",
@@ -41,9 +42,6 @@ const ImgSesiones = styled.img`
     margin-right:0;
     }
 `
-AvatarSessions
-
-
 
 const SectionAvatars = styled.section`
     background-color: ${colors.SectionBg2} ;
@@ -71,7 +69,9 @@ const ContainerAvatars = styled.div`
 
 `
 
+
 const Sesiones = () => {
+
   return (
     <MainContainer >
         <SectionAvatars>

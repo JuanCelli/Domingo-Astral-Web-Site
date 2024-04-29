@@ -33,6 +33,8 @@ const ContainerArrowUp = styled.div`
     
     &:hover {
         background-color: ${colors.SectionBg2};
+        border-color:4px ${colors.ArticuleBg1};
+        box-shadow: 0 0 4px ${colors.ArticuleBg1};
 
         ${FontAwesomeIconStyled}{
             color:${colors.ArticuleBg1};

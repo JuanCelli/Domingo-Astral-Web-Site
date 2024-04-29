@@ -7,6 +7,7 @@ import Home from './pages/Home.jsx'
 import SobreMi from './pages/SobreMi.jsx'
 import Footer from './components/Footer.jsx'
 import Sesiones from './pages/Sesiones.jsx'
+import Contacto from './pages/Contacto.jsx'
 
 
 
@@ -15,16 +16,17 @@ function App() {
 
   return (
     <>
-      <Navigation></Navigation>
       <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/sobremi' element={<SobreMi/>}/>
-          <Route path='/sesiones' element={<Sesiones/>}/>
-        </Routes>
+          <Navigation/>
+          <Routes>
+            <Route path='/' element={<Home/>}/>
+            <Route path='/sobremi' element={<SobreMi/>}/>
+            <Route path='/sesiones' element={<Sesiones/>}/>
+            <Route path='/contacto' element={<Contacto/>}/>
+          </Routes>
+          <Footer/>
+          <ArrowUp/>
       </BrowserRouter>
-      <Footer></Footer>
-      <ArrowUp></ArrowUp>
 
     </>
   )

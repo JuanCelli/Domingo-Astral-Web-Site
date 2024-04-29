@@ -4,6 +4,7 @@ import { SectionContainer } from '../components/SectionContainer.jsx'
 import { ArticuleContainer } from '../components/ArticuleContainer.jsx'
 import SobreMiImage from '../components/SobreMiImage.jsx'
 import SobreMiImage2 from '../components/SobreMiImage2.jsx'
+import ScrollToTop from '../utils/ScrollToTop.js'
 
 const texts1 = ["Me llamo Zoe. Tengo sol en Leo, luna en Capricornio y ascendente Acuario.",
                 "Encontré la astrología cuando necesitaba respuestas, y me dió más preguntas.",
@@ -22,6 +23,8 @@ const texts2 = ["Soy astróloga con enfoque holístico, recibida en la escuela A
 
 
 const SobreMi = () => {
+  ScrollToTop()
+
   return (
     <MainContainer>
       <SectionContainer flexDirection="column" justifyContent="center" >

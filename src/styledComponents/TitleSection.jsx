@@ -5,13 +5,13 @@ import { colors } from '../styled/config'
 
 const Title = styled.h2`
     font-size: 2.2rem;
-    color: ${colors.ArticuleBg1};
+    color:${({ color }) => color ? color : colors.ArticuleBg1};
     margin-bottom: 3rem;
 `
 
-const TitleSection = ({children}) => {
+const TitleSection = ({children,color}) => {
   return (
-    <Title>{children}</Title>
+    <Title color={color}>{children}</Title>
   )
 }
 

@@ -10,6 +10,7 @@ import { AvatarSessions } from '../components/AvatarSessions.jsx'
 import { Buttom } from '../components/Buttom.jsx'
 import Carousel from '../components/Carousel.jsx'
 import { colors } from '../styled/config.js'
+import ScrollToTop from '../utils/ScrollToTop.js'
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -23,6 +24,8 @@ const text = ["Me llamo Zoe. Tengo sol en Leo, luna en Capricornio y ascendente 
               "Dejar de identificarnos con una pequeña parte de nuestro ser, para empezar a apropiarnos de toda esa energía que ya era nuestra, y quizás no sabíamos."]
 
 const Home = () => {
+  ScrollToTop()
+
   return (
     <MainContainer>
     <BackgroundImg id="inicio"></BackgroundImg>
