@@ -47,7 +47,7 @@ const Home = () => {
         <AvatarSessions url="/sesiones/#FloresDeBach" src="\assets\foto flor 2 sin fondo.png" title="Flores de Bach"></AvatarSessions>
       </DivContainer>
       <DivContainer >
-        <Buttom src="/sesiones" >Ver más</Buttom>
+        <Buttom src="/sesiones/#root" >Ver más</Buttom>
       </DivContainer>
     </SectionContainer>
       <Carousel></Carousel>

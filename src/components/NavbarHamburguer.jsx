@@ -2,16 +2,12 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { colors } from '../styled/config';
 
-
-
 import InstagramIcon from '@mui/icons-material/Instagram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 
 import Item from './ItemLinkContact';
 import { NavLink, useLocation } from 'react-router-dom';
-
-
 
 
 const Navbar = styled.nav`
@@ -35,7 +31,7 @@ const Navbar = styled.nav`
       background-color: ${colors.Navbar};
       justify-content:center;
       width: 100%;
-      height: ${({ isOpen }) => (isOpen ? '100vh' : 'auto')};
+      height: ${({ isOpen }) => (isOpen ? '100%' : 'auto')};
   }
 `;
 

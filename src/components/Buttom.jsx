@@ -1,9 +1,9 @@
 import styled from "styled-components"
 import { colors } from "../styled/config"
 import { HashLink } from "react-router-hash-link"
-import { Link } from "react-router-dom"
 
-const ButtonStyled = styled(Link)`
+
+const ButtonStyled = styled(HashLink)`
     font-size: 1rem;
     padding: .7rem 1.5rem;
     color: ${colors.SectionBg2};
@@ -28,6 +28,6 @@ const ButtonStyled = styled(Link)`
 
 export const Buttom = ({children,src}) => {
   return (
-    <ButtonStyled to={src} reloadDocument>{children}</ButtonStyled>
+    <ButtonStyled to={src}>{children}</ButtonStyled>
   )
 }
