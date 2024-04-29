@@ -62,7 +62,7 @@ const NavLinks = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
     display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
-    padding-top: 5rem;
+    padding-top: 1rem;
     height: ${({ isOpen }) => (isOpen ? '100vh' : '0')};
     overflow: hidden;
     /* z-index: 15; */
@@ -99,7 +99,7 @@ const ContactNavbar = styled.div`
     width: 12rem;
     justify-content: space-around;
     position: absolute;
-    bottom: 2rem;
+    bottom: 4rem;
   }
 `
 
