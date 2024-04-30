@@ -32,6 +32,7 @@ const Navbar = styled.nav`
       justify-content:center;
       width: 100%;
       height: ${({ isOpen }) => (isOpen ? '100%' : 'auto')};
+      overflow-y: hidden;
   }
 `;
 
@@ -62,9 +63,9 @@ const NavLinks = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
     display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
-    padding-top: 1rem;
+    padding-top: 8rem;
+    padding-bottom: 22rem;
     height: ${({ isOpen }) => (isOpen ? '100vh' : '0')};
-    overflow: hidden;
     /* z-index: 15; */
   }
 `;
@@ -99,7 +100,7 @@ const ContactNavbar = styled.div`
     width: 12rem;
     justify-content: space-around;
     position: absolute;
-    bottom: 4rem;
+    bottom: 10rem;
   }
 `
 
@@ -186,7 +187,7 @@ const Navigation = () => {
         <NavLinkStyled color={color} isHome={isHome} onClick={setCloseMenu} to="/sobremi">Sobre Mí</NavLinkStyled>
         <NavLinkStyled color={color} isHome={isHome} onClick={setCloseMenu} to="/sesiones">Sesiones</NavLinkStyled>
         <NavLinkStyled color={color} isHome={isHome} onClick={setCloseMenu} to="/contacto">Contacto</NavLinkStyled>
-        <NavLinkStyled color={color} isHome={isHome} onClick={setCloseMenu} to="/">Novedades</NavLinkStyled>
+        <NavLinkStyled color={color} isHome={isHome} onClick={setCloseMenu} to="/novedades">Novedades</NavLinkStyled>
       </NavLinks>
 
 

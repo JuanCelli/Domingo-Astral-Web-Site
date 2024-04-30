@@ -28,7 +28,7 @@ const SobreMi = () => {
   return (
     <MainContainer>
       <SectionContainer flexDirection="column" justifyContent="center" >
-        <SectionContainer width={"70%"} justifyContent="center">
+        <SectionContainer width={"70%"} justifyContent="center" >
 
           <ArticuleContainer title="Sobre Mí" marginTop="4rem">
             {texts1}

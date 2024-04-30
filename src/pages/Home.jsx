@@ -12,6 +12,9 @@ import Carousel from '../components/Carousel.jsx'
 import { colors } from '../styled/config.js'
 import ScrollToTop from '../utils/ScrollToTop.js'
 
+
+
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "/src/styled/Carrousel.css"
@@ -35,7 +38,7 @@ const Home = () => {
       </ArticuleContainer>
       <ProfileImage></ProfileImage>
     </SectionContainer>
-    <SectionContainer width="80%" color={colors.SectionBg2} flexDirection="column" justifyContent="center">
+    <SectionContainer width="70%" color={colors.SectionBg2} flexDirection="column" justifyContent="center">
       <TitleSection>Sesiones</TitleSection>
       <DivContainer justifyContent="center">
         <AvatarSessions url="/sesiones/#CartaNatal" src="\assets\foto sin fondo.png" title="Carta Natal"></AvatarSessions>
@@ -51,6 +54,7 @@ const Home = () => {
       </DivContainer>
     </SectionContainer>
       <Carousel></Carousel>
+
 
   </MainContainer>
   )
