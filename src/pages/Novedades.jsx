@@ -8,19 +8,20 @@ import styled from 'styled-components'
 
 
 const ImgContact = styled.img`
-    margin-top: 4rem;
+    margin-top: 10rem;
     object-fit: cover;
     width: 28rem;
     height: 50rem;
     
     @media (max-width: 768px) {
+        margin-top: 1rem;
         width: 22rem;
-        height: 40rem;
+        height: 30rem;
   }
 `
 
 const IGEmbedContainer = styled.div`
-    margin-top: 4rem;
+    margin-top: 10rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,11 +40,13 @@ const IGEmbedContainer = styled.div`
     }
 
     @media (max-width: 768px) {
+        margin-top: 1rem;
         border: none;
         box-shadow: none;
+
         &:hover{
-        background-color: inherit;
-        box-shadow: none;
+            background-color: inherit;
+            box-shadow: none;
     }
   }
 
