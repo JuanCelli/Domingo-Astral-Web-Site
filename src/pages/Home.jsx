@@ -13,11 +13,17 @@ import { colors } from '../styled/config.js'
 import ScrollToTop from '../utils/ScrollToTop.js'
 
 
-
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "/src/styled/Carrousel.css"
+
+
+
+
+
+
+
+
 
 const text = ["Me llamo Zoe. Tengo sol en Leo, luna en Capricornio y ascendente Acuario.",
               "Encontré la astrología cuando necesitaba respuestas, y me dió más preguntas.",
@@ -32,13 +38,13 @@ const Home = () => {
   return (
     <MainContainer>
     <BackgroundImg id="inicio"></BackgroundImg>
-    <SectionContainer width="80%" justifyContent="center">
+    <SectionContainer id="sobremi" width="80%" justifyContent="center">
       <ArticuleContainer title="Sobre Mí">
         {text}
       </ArticuleContainer>
       <ProfileImage></ProfileImage>
     </SectionContainer>
-    <SectionContainer width="70%" color={colors.SectionBg2} flexDirection="column" justifyContent="center">
+    <SectionContainer width="70%" color={colors.SectionBg2} flexDirection="column" justifyContent="center" mediaWidth="80%">
       <TitleSection>Sesiones</TitleSection>
       <DivContainer justifyContent="center">
         <AvatarSessions url="/sesiones/#CartaNatal" src="\assets\foto sin fondo.png" title="Carta Natal"></AvatarSessions>

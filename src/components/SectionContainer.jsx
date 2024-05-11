@@ -20,32 +20,33 @@ const Container = styled.div`
     display: flex;
     flex-direction:${(props) => props.flexDirection || "row"} ;
     justify-content:${(props) => props.justifyContent || "space-around"} ;
-    width:${(props) => props.width || "100%"} ;
+    width:${(props) => props.width || "100%"};
     align-items:${(props) => props.alignItems || "center"} ;
     box-sizing: border-box;
 
 
 
     @media (max-width: 1600px) {
-      width: 90%;
+      width:${(props) => props.mediaWidth || "90%"};
   }
 
     @media (max-width: 1000px) {
-      width: 100%;
+      width:${(props) => props.mediaWidth || "100%"};
       flex-direction:column;
       align-content: center;
       justify-content: center;
   }
 
   @media (max-width: 768px) {
+    width:100%;
     flex-direction: ${(props) => props.ReverseWarp ? "column-reverse" : "column"} ;
     }
 `
 
-export const SectionContainer = ({children, color, flexDirection,justifyContent, id,width, alignItems,ReverseWarp }) => {
+export const SectionContainer = ({children, color, flexDirection,justifyContent, id,width, alignItems,ReverseWarp, mediaWidth }) => {
   return (
     <Section color={color} id={id ?? undefined}>
-      <Container flexDirection={flexDirection} justifyContent={justifyContent} width={width} alignItems={alignItems} ReverseWarp={ReverseWarp}>
+      <Container flexDirection={flexDirection} justifyContent={justifyContent} width={width} alignItems={alignItems} ReverseWarp={ReverseWarp} mediaWidth={mediaWidth}>
         {children}
       </Container>
     </Section>

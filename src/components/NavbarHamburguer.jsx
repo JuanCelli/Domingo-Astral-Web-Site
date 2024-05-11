@@ -8,6 +8,7 @@ import MailOutlineIcon from '@mui/icons-material/MailOutline';
 
 import Item from './ItemLinkContact';
 import { NavLink, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 const Navbar = styled.nav`
@@ -38,12 +39,25 @@ const Navbar = styled.nav`
 
 const LogoImg = styled.img`
     object-fit: cover;
-    width: 6rem;
-    height: 5rem;
+    width: 7rem;
+    height: 6rem;
 `;
-const LogoContainer = styled.div`
+const LogoContainer = styled(Link)`
     display: flex;
-    padding: 0rem 2rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+
+
+    width: 5.5rem;
+    height: 5.5rem;
+    margin: 0rem 2rem;
+    ${({ isHome }) => (isHome ? '' : `background-color: ${colors.Navbar}`  )};
+    transition: 0.5s;
+
+    &:hover{
+      ${({ color }) => (color ? '' : `box-shadow: 0px 0px 0.5rem ${colors.ArticuleBg1};`)};
+    }
 
     @media (max-width: 768px) {
       ${({ isOpen }) => (isOpen ? 'position:relative' : 'display:none')};
@@ -72,14 +86,14 @@ const NavLinks = styled.div`
 
 const NavLinkStyled = styled(NavLink)`
   font-weight: 500;
-  color: ${colors.NavLink};
+  color: ${({ location,to,color,isHome }) => location.split("/")[1]===to.split("/")[1] ? (color  ? colors.SectionBg1 : (isHome? colors.SectionBg1:colors.ArticuleBg1)) : colors.NavLink};
+
   text-decoration: none;
   padding: 0.5rem 1rem;
   font-size: 1.2rem;
   transition: .1s ease-in-out;
 
   &:hover {
-    /* color: lightgray; */
     color: ${({ isHome }) => isHome ? colors.SectionBg1 : colors.ArticuleBg1};
     color: ${({ color }) => color ? colors.SectionBg1 : ""};
   }
@@ -172,6 +186,8 @@ const Navigation = () => {
     setIsOpen(false);
   };
 
+  
+
   return (
     <Navbar color={color}>
       <MenuIcon onClick={toggleMenu}>
@@ -179,15 +195,15 @@ const Navigation = () => {
         <Burger isOpen={isOpen} />
         <Burger isOpen={isOpen} />
       </MenuIcon>
-      <LogoContainer isOpen={isOpen}>
+      <LogoContainer color={color} isHome={isHome} to='/' reloadDocument={true} isOpen={isOpen}>
             <LogoImg src="\assets\Logo.png"></LogoImg>
         </LogoContainer>
       <NavLinks isOpen={isOpen}>
-        <NavLinkStyled color={color} isHome={isHome} onClick={setCloseMenu} to="/">Inicio</NavLinkStyled>
-        <NavLinkStyled color={color} isHome={isHome} onClick={setCloseMenu} to="/sobremi">Sobre Mí</NavLinkStyled>
-        <NavLinkStyled color={color} isHome={isHome} onClick={setCloseMenu} to="/sesiones">Sesiones</NavLinkStyled>
-        <NavLinkStyled color={color} isHome={isHome} onClick={setCloseMenu} to="/contacto">Contacto</NavLinkStyled>
-        <NavLinkStyled color={color} isHome={isHome} onClick={setCloseMenu} to="/novedades">Novedades</NavLinkStyled>
+        <NavLinkStyled location={location.pathname} color={color} isHome={isHome} onClick={setCloseMenu} to="/">Inicio</NavLinkStyled>
+        <NavLinkStyled location={location.pathname} color={color} isHome={isHome} onClick={setCloseMenu} to="/sobremi">Sobre Mí</NavLinkStyled>
+        <NavLinkStyled location={location.pathname} color={color} isHome={isHome} onClick={setCloseMenu} to="/sesiones">Sesiones</NavLinkStyled>
+        <NavLinkStyled location={location.pathname} color={color} isHome={isHome} onClick={setCloseMenu} to="/contacto">Contacto</NavLinkStyled>
+        <NavLinkStyled location={location.pathname} color={color} isHome={isHome} onClick={setCloseMenu} to="/novedades">Novedades</NavLinkStyled>
       </NavLinks>
 
 

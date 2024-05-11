@@ -59,7 +59,7 @@ const testimonialData = [
     {
         author:"Lupe",
         text:"En un momento de mi vida donde hay tanto sucediendo, tenía la necesidad de saber que me estaban queriendo acercar los astros. Esta es la Revolución Solar que mas claridad me trajo, me ayudo a encontrar un norte hacia el cuál ir. "
-    },
+    }
 ]
 
 function SampleNextArrow(props) {

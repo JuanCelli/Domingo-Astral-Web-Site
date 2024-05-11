@@ -127,13 +127,14 @@ const InputSubmit = styled.input`
   }
 `
 
+
 const Contacto = () => {
     ScrollToTop()
 
   return (
     <MainContainer>
         <SectionContainer color={colors.ContactoBg} flexDirection="column" justifyContent="center">
-            <SectionContainer color={colors.ContactoBg} width={"60%"} justifyContent="space-around">
+            <SectionContainer color={colors.ContactoBg} width={"60%"} justifyContent="space-around" mediaWidth="70%">
                 <ContainerForm>
 
                     <TitleSection>Contacto</TitleSection>
