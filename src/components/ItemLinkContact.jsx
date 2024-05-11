@@ -9,6 +9,10 @@ const ItemContainer = styled.div`
   &:hover{
     color: ${colors.SectionBg1};
   }
+
+  @media (max-width: 768px) {
+    color: ${({ color }) => (color ? color : colors.ContactoBg)};
+  }
 `
 
 
@@ -31,6 +35,9 @@ const LinkItem = styled.a`
 
   &:hover{
     color: ${colors.SectionBg1};
+    @media (max-width: 768px) {
+    color: ${({ color }) => (color ? color : colors.LinkUnHover)};
+  }
   }
 `
 
